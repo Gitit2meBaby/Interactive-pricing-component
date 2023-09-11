@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="title">
+        <h1>Simple, traffic-based pricing</h1>
+        <h2>Sign-up for our 30-day trial. No credit card required.</h2>
+      </div>
+    </section>
+
+    <img class="circles" src="images/pattern-circles.svg" alt="circles">
+
+    <section>
+
+      <div class="app">
+        <div class="price">
+          <div class="pageviews">
+            <h3 id="pageViews">100k Pageviews</h3>
+          </div>
+          <div class="price-display-wrapper desktop">
+            <h2 class="price-display-wrapper" id="priceDisplay">$16.00</h2>
+            <h3 class="billing-period" id="billingPeriod"> /month</h3>
+          </div>
+        </div>
+
+        <div class="slider-container">
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+
+        <div class="price-display-wrapper mobile">
+          <h2 class="price-display-wrapper" id="priceDisplayMobile">$16.00</h2>
+          <h3 class="billing-period" id="billingPeriodMobile"> /month</h3>
+        </div>
+
+        <div class="billing">
+          <div class="monthly-billing">
+            <p>Monthly Billing</p>
+            <input type="checkbox" id="switch" /><label for="switch"></label>
+          </div>
+
+          <div class="yearly-billing">
+            <p>Yearly Billing</p>
+            <p id="discount" class="discount">25% discount</p>
+          </div>
+        </div>
+
+        <div class="bottom-section">
+          <div class="tick-list">
+            <div>
+              <img src="images/icon-check.svg" alt="">
+              <p>Unlimited Websites</p>
+            </div>
+            <div>
+              <img src="images/icon-check.svg" alt="">
+              <p>100% data ownership</p>
+            </div>
+            <div>
+              <img src="images/icon-check.svg" alt="">
+              <p>Email reports</p>
+            </div>
+          </div>
+
+          <div class="btn-wrapper">
+            <button class="primary-btn">Start My Trial</button>
+          </div>
+        </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
